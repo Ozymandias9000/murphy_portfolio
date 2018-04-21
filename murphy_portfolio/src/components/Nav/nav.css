@@ -1,14 +1,16 @@
 nav {
-	margin: auto;
+	color: hsla(0,0%,0%,.8);
+	letter-spacing: 2px;
 	padding: .75em;
-	min-height: 40px;
+	height: 60px;
 	width: 100vw;
-	background: hsla(0,0%,0%,.2);
+	background: hsla(0,0%,0%,.20);
 	white-space: nowrap;
 	display: grid;
-	grid-gap: 1.5em;
-	grid: auto-flow / 40px 1fr repeat(4, 60px);
+	grid-gap: 1em;
+	grid: auto-flow / 50px 1fr repeat(4, 100px);
 	justify-items: center;
 	align-items: center;
 	border-bottom: 5px solid #BADA55;
+	position: fixed;
 }

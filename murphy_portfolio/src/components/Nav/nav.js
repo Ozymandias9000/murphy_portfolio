@@ -4,11 +4,11 @@ import './nav.css';
 const Nav = props => (
 	<nav>
 		<span>Logo</span>
-		<span>--Empty Space--</span>
+		<span></span>
 		<span>About</span>
 		<span>Resume</span>
 		<span>Projects</span>
-		<span>Contact</span>
+		<span id='contact'>Contact</span>
 	</nav>
 );
 
