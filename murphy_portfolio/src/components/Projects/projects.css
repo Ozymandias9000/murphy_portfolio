@@ -9,6 +9,12 @@ section .project-text  {
 	margin-bottom: 50px;
 }
 
+#projects {
+  margin-top: -100px;   
+  padding-bottom: 100px; 
+  display: block; 
+}
+
 /*--------------Project Flex Gallery------------------------*/
     .panels-container {
       overflow: hidden;
@@ -68,7 +74,7 @@ section .project-text  {
       font-family: 'Amatic SC', cursive;
       text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
       font-size: .75em;
-      cursor: pointer;
+      cursor: default;
     }
     .panel p:nth-child(2) {
       font-size: 4em;

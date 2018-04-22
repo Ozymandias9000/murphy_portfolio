@@ -14,5 +14,15 @@
 	color: #C0FFEE;
 	width: 80vw;
 }
-.about-me__button {
+
+#about {
+	margin-top: -100px;   
+  padding-bottom: 100px; 
+  display: block; 
+}
+
+#contact {
+	margin-top: -100px;   
+  padding-bottom: 100px; 
+  display: block; 
 }

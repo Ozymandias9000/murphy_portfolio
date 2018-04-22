@@ -1,10 +1,9 @@
 nav {
-	color: hsla(0,0%,0%,.8);
+	background-color: #303030;
 	letter-spacing: 2px;
 	padding: .75em;
 	height: 60px;
 	width: 100vw;
-	background: hsla(0,0%,0%,.20);
 	white-space: nowrap;
 	display: grid;
 	grid-gap: 1em;
@@ -13,4 +12,19 @@ nav {
 	align-items: center;
 	border-bottom: 5px solid #BADA55;
 	position: fixed;
+}
+
+nav a {
+	color: hsla(0,100%,100%, .9);
+	text-decoration: none;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+nav a:hover, nav a:active {
+	color: hsla(0,100%,100%, .4);
+}
+
+#home {
+	top: 0;
 }

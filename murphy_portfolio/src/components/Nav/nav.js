@@ -3,12 +3,12 @@ import './nav.css';
 
 const Nav = props => (
 	<nav>
-		<span>Logo</span>
+		<a href='#home'>Home</a>
 		<span></span>
-		<span>About</span>
-		<span>Resume</span>
-		<span>Projects</span>
-		<span id='contact'>Contact</span>
+		<a href='#about'>About</a>
+		<a href='#contact'>Contact</a>
+		<a href='#resume'>Resume</a>
+		<a href='#projects'>Projects</a>
 	</nav>
 );
 

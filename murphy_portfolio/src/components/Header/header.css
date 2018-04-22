@@ -20,6 +20,10 @@ header > .banner-text {
 	margin-top: 125px;
 }
 
+#home {
+	top: 0;
+}
+
 /* --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
 

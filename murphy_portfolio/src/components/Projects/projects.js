@@ -25,6 +25,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<section>
+				<span id='projects'></span>
 				<div className='project-text'>
 					<h3>
 						Projects
