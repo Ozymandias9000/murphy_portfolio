@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
 section {
 	width: 100vw;
 	min-height: 600px;
@@ -32,7 +34,7 @@ section .project-text  {
       /* Safari transitionend event.propertyName === flex */
       /* Chrome + FF transitionend event.propertyName === flex-grow */
       transition:
-        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        font-size .7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
         flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
         background 0.2s;
       font-size: .5em;
@@ -56,7 +58,7 @@ section .project-text  {
     .panel > * {
       margin:0;
       width: 100%;
-      transition:transform 0.5s, font-size 0.5s;
+      transition:transform 0.5s;
       flex: 1 0 auto;
       display: flex;
       justify-content: center;
@@ -64,42 +66,51 @@ section .project-text  {
     }
 
 .panel > *:first-child { transform: translateY(-100%); font-size: 0; }
-.panel.open-active > *:first-child { transform: translateY(0%); font-size: 1em }
+.panel.open-active > *:first-child { transform: translateY(0%); font-size: 2em }
 .panel > *:last-child { transform: translateY(100%); font-size: 0 }
-.panel.open-active > *:last-child { transform: translateY(0%); font-size: 1em }
+.panel.open-active > *:last-child { transform: translateY(0%); font-size: 2em }
 
 
     .panel p {
       text-transform: uppercase;
       font-family: 'Amatic SC', cursive;
       text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: .75em;
-      cursor: default;
+      cursor: pointer;
+      line-height: 50px;
     }
+    
+    .panel a {
+      color: hsla(0,100%,100%,.8);
+      font-size: 60px;
+    }
+      
     .panel p:nth-child(2) {
-      font-size: 4em;
+      font-size: 6em;
     }
 
     .panel.open {
       flex: 5;
-      font-size:40px;
+      font-size: 30px;
+    }
+
+    .panel.open p {
+      line-height: 150px;
     }
 
 /* --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
 	.panels-container {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		grid: 1fr / 1fr;
+    flex-direction: column;
 	}
 
 	.panel {
-		grid-column: span 2;
 		min-height: 600px;
-		transition: all 0.5s;
 	}
 
 .panel > *:first-child { transform: translateX(-100%); font-size: 0; }
-.panel.open-active > *:first-child { transform: translateX(0%); font-size: 1em }
+.panel.open-active > *:first-child { transform: translateX(0%); font-size: 2em }
 .panel > *:last-child { transform: translateX(100%); font-size: 0 }
 .panel.open-active > *:last-child { transform: translateX(0%); font-size: 1em }
 

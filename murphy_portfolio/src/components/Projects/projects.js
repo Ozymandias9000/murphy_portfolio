@@ -5,11 +5,8 @@ class Projects extends Component {
 	componentDidMount() {
 		const panels = document.querySelectorAll('.panel');
 
-		function toggleOpen(e) {
-			// if (e.path[0] === p) {
-			console.log(e.path[0]);
+		function toggleOpen() {
 		  this.classList.toggle('open');
-		// }
 		}
 
 		function toggleActive(e) {
@@ -37,34 +34,34 @@ class Projects extends Component {
 
 				<div className="panels-container">
 			    <div className="panel panel1">
-			      <p>Hey</p>
-			      <p>Let's</p>
-			      <p>Dance</p>
+			      <p><a href='https://github.com/Ozymandias9000/face-recog/'>View Source</a></p>
+			      <p>Smart Brain</p>
+			      <p><a href='https://smart-brain-nm.herokuapp.com/'>View App on Heroku</a></p>
 			    </div>
 			    <div className="panel panel2">
-			      <p>Give</p>
-			      <p>Take</p>
-			      <p>Receive</p>
+			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View Source</a></p>
+			      <p>Background <br /> Generator</p>
+			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
 			    </div>
 			    <div className="panel panel3">
-			      <p>Experience</p>
-			      <p>It</p>
-			      <p>Today</p>
+			      <p><a href='https://github.com/Ozymandias9000/todolocalstorage/'>View on GitHub</a></p>
+			      <p>To-Do with <br />Local Storage</p>
+			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
 			    </div>
 			    <div className="panel panel4">
-			      <p>Give</p>
-			      <p>All</p>
-			      <p>You can</p>
+			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View on GitHub</a></p>
+			      <p>React Coin</p>
+			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
 			    </div>
 			    <div className="panel panel5">
-			      <p>Life</p>
-			      <p>In</p>
-			      <p>Motion</p>
+			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View on GitHub</a></p>
+			      <p>Pomodoro Clock</p>
+			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
 			    </div>
 			    <div className="panel panel6">
-			      <p>What</p>
-			      <p>Now</p>
-			      <p>?</p>
+			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View on GitHub</a></p>
+			      <p>Wikipedia Search</p>
+			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
 			    </div>
 			  </div>
 			</section>
