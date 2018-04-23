@@ -29,7 +29,7 @@ section .project-text  {
     .panel {
       background:#6B0F9C;
       box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
-      color:white;
+      color:black;
       text-align: center;
       /* Safari transitionend event.propertyName === flex */
       /* Chrome + FF transitionend event.propertyName === flex-grow */
@@ -48,12 +48,12 @@ section .project-text  {
       flex-direction: column;
     }
 
-    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-    .panel2 { background-image:url(https://source.unsplash.com/YEsedBccUEA/1500x1500); }
-    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
-		.panel6 { background-image:url(https://source.unsplash.com/random/1500x1500); }
+    .panel1 { background-image:url(../../img/img-smart-brain.png); }
+    .panel2 { background-image:url(../../img/img-background-gen.png); }
+    .panel3 { background-image:url(../../img/img-todo.png); }
+    .panel4 { background-image:url(../../img/img-react-coin.png); color: white; }
+    .panel5 { background-image:url(../../img/img-pomo-clock.png); color: white;}
+		.panel6 { background-image:url(../../img/img-wiki-search.png); }
 		
     .panel > * {
       margin:0;
