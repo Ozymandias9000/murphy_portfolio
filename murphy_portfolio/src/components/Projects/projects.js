@@ -49,19 +49,19 @@ class Projects extends Component {
 			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
 			    </div>
 			    <div className="panel panel4">
+			      <p><a href='https://codepen.io/Aristocles/pen/gmyrme'>View on CodePen</a></p>
+			      <p>Pomodoro Clock</p>
+			      <p><a href='https://codepen.io/Aristocles/full/gmyrme/'>View App</a></p>
+			    </div>
+			    <div className="panel panel5">
 			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View on GitHub</a></p>
 			      <p>React Coin</p>
 			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
 			    </div>
-			    <div className="panel panel5">
-			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View on GitHub</a></p>
-			      <p>Pomodoro Clock</p>
-			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
-			    </div>
 			    <div className="panel panel6">
-			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View on GitHub</a></p>
+			      <p><a href='https://codepen.io/Aristocles/pen/wzkXJp'>View on CodePen</a></p>
 			      <p>Wikipedia Search</p>
-			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
+			      <p><a href='https://codepen.io/Aristocles/full/wzkXJp/'>View App</a></p>
 			    </div>
 			  </div>
 			</section>

@@ -2,6 +2,7 @@ footer {
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 30px;
+	border-top: 4px solid #BADA55;
 	width:100%;
 	background:#303030;
 	font-size: 14px;

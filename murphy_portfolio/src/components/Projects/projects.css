@@ -38,6 +38,7 @@ section .project-text  {
         flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
         background 0.2s;
       font-size: .5em;
+      font-weight: 600;
       background-size:cover;
       background-position:center;
       flex: 1;
@@ -51,9 +52,9 @@ section .project-text  {
     .panel1 { background-image:url(../../img/img-smart-brain.png); }
     .panel2 { background-image:url(../../img/img-background-gen.png); }
     .panel3 { background-image:url(../../img/img-todo.png); }
-    .panel4 { background-image:url(../../img/img-react-coin.png); color: white; }
-    .panel5 { background-image:url(../../img/img-pomo-clock.png); color: white;}
-		.panel6 { background-image:url(../../img/img-wiki-search.png); }
+    .panel4 { background-image:url(../../img/img-pomo-clock.png); color: white; }
+    .panel5 { background-image:url(../../img/img-react-coin.png); color: white; }
+		.panel6 { background-image:url(../../img/img-wiki-search.png); color: white; }
 		
     .panel > * {
       margin:0;
@@ -80,7 +81,7 @@ section .project-text  {
     }
     
     .panel a {
-      color: hsla(0,100%,100%,.8);
+      color: white;
       font-size: 60px;
     }
       
@@ -90,7 +91,7 @@ section .project-text  {
 
     .panel.open {
       flex: 5;
-      font-size: 30px;
+      font-size: 20px;
     }
 
     .panel.open p {
@@ -114,4 +115,6 @@ section .project-text  {
 .panel > *:last-child { transform: translateX(100%); font-size: 0 }
 .panel.open-active > *:last-child { transform: translateX(0%); font-size: 1em }
 
+.panel5 { background-size: cover; }
+.panel6 { background-size: cover; }
 }
