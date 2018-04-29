@@ -1,20 +1,24 @@
 nav {
 	background-color: #303030;
 	letter-spacing: 2px;
-	padding: .75em;
 	height: 60px;
 	width: 100vw;
 	white-space: nowrap;
 	display: grid;
 	grid-gap: 1em;
-	grid: auto-flow / 50px 1fr repeat(4, 100px);
+	grid: 50px / 50px 1fr 550px;
 	justify-items: center;
 	align-items: center;
 	border-bottom: 5px solid #BADA55;
 	position: fixed;
 }
 
+nav li {
+	list-style: none;
+}
+
 nav a {
+	padding-left: 50px;
 	color: hsla(0,100%,100%, .9);
 	text-decoration: none;
 	cursor: pointer;
@@ -23,4 +27,61 @@ nav a {
 
 nav a:hover, nav a:active {
 	color: hsla(0,100%,100%, .4);
+}
+
+.collapsible-menu, .menu-content ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+input#menu {
+	    display: none;
+	}
+
+@media only screen and (max-width: 900px) {
+
+	nav {
+		grid: 50px / 50px 0px 500px;
+	}
+
+	.collapsible-menu {
+			margin: 268px 0 0 420px;
+	    padding: 0px 30px;
+	    display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+	}
+	.collapsible-menu ul {
+	    list-style-type: none;
+	    padding: 0;
+	    display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+	}
+	.collapsible-menu a {
+			color: black;
+	    display: block;
+	    padding: 10px;
+	    text-decoration: none;
+	}
+
+	.collapsible-menu label {
+		margin-top: -28px;
+		width: 40px;
+		height: 40px;
+		font-size: 0;
+		background: url(menu.png) no-repeat center/ 50px;
+		cursor: pointer;
+	}
+
+	.menu-closed li {
+		margin-left: 70px;
+  	font-size: 0;
+	}
+
+	.menu-open {
+		box-shadow: 1px 2px 3px 0px;
+	}
 }
