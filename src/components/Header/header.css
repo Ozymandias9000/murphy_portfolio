@@ -1,0 +1,61 @@
+header {
+	height: 700px;
+	min-width: 100vw;
+	display: grid;
+	justify-items: center;
+	background: #0cebeb;  /* fallback for old browsers */ 
+	background: -webkit-linear-gradient(left, #29ffc6, #20e3b2, #0cebeb);
+	background: -moz-linear-gradient(left, #29ffc6, #20e3b2, #0cebeb);
+	background: -o-linear-gradient(left, #29ffc6, #20e3b2, #0cebeb);
+	background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+}
+
+header > .banner-text {
+	text-align: center;
+	height: 400px;
+	width: 80vw;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	margin-top: 125px;
+}
+
+#home {
+	top: 0;
+}
+
+/* --------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+
+  /* header styles
+ ------------------------------------------------------------------ */
+ header h1 {
+    font-size: 4.5em;
+ }
+}
+
+@media only screen and (max-width: 830px) {
+
+  /* header styles
+ ------------------------------------------------------------------ */
+ header h1 {
+    font-size: 4em;
+ }
+
+ header h3 {
+ 	font-size: 1.1em;
+ }  
+}
+
+@media only screen and (max-width: 500px) {
+	/* header styles
+ ------------------------------------------------------------------ */
+ header h1 {
+    font-size: 3.2em;
+ }
+
+ header h3 {
+ 	font-size: 1em;
+ } 
+}
+
