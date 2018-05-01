@@ -34,34 +34,34 @@ class Projects extends Component {
 
 				<div className="panels-container">
 			    <div className="panel panel1">
-			      <p><a href='https://github.com/Ozymandias9000/face-recog/'>View Source</a></p>
+			      <p><a href='https://github.com/Ozymandias9000/face-recog/' target='_blank'>View Source</a></p>
 			      <p>Smart Brain</p>
-			      <p><a href='https://smart-brain-nm.herokuapp.com/'>View App on Heroku</a></p>
+			      <p><a href='https://smart-brain-nm.herokuapp.com/' target='_blank'>View App on Heroku</a></p>
 			    </div>
 			    <div className="panel panel2">
-			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View Source</a></p>
-			      <p>Background <br /> Generator</p>
-			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
+			      <p><a href='https://github.com/Ozymandias9000/background-generator/' target='_blank'>View Source</a></p>
+			      <p>Background Generator</p>
+			      <p><a href='https://ozymandias9000.github.io/background-generator/' target='_blank'>View App</a></p>
 			    </div>
 			    <div className="panel panel3">
-			      <p><a href='https://github.com/Ozymandias9000/todolocalstorage/'>View on GitHub</a></p>
-			      <p>To-Do with <br />Local Storage</p>
-			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
+			      <p><a href='https://github.com/Ozymandias9000/todolocalstorage/' target='_blank'>View on GitHub</a></p>
+			      <p>To-Do with Local Storage</p>
+			      <p><a href='https://ozymandias9000.github.io/background-generator/' target='_blank'>View App</a></p>
 			    </div>
 			    <div className="panel panel4">
-			      <p><a href='https://codepen.io/Aristocles/pen/gmyrme'>View on CodePen</a></p>
+			      <p><a href='https://codepen.io/Aristocles/pen/gmyrme' target='_blank'>View on CodePen</a></p>
 			      <p>Pomodoro Clock</p>
-			      <p><a href='https://codepen.io/Aristocles/full/gmyrme/'>View App</a></p>
+			      <p><a href='https://codepen.io/Aristocles/full/gmyrme/' target='_blank'>View App</a></p>
 			    </div>
 			    <div className="panel panel5">
-			      <p><a href='https://github.com/Ozymandias9000/background-generator/'>View on GitHub</a></p>
+			      <p><a href='https://github.com/Ozymandias9000/background-generator/' target='_blank'>View on GitHub</a></p>
 			      <p>React Coin</p>
-			      <p><a href='https://ozymandias9000.github.io/background-generator/'>View App</a></p>
+			      <p><a href='https://ozymandias9000.github.io/background-generator/' target='_blank'>View App</a></p>
 			    </div>
 			    <div className="panel panel6">
-			      <p><a href='https://codepen.io/Aristocles/pen/wzkXJp'>View on CodePen</a></p>
+			      <p><a href='https://codepen.io/Aristocles/pen/wzkXJp' target='_blank'>View on CodePen</a></p>
 			      <p>Wikipedia Search</p>
-			      <p><a href='https://codepen.io/Aristocles/full/wzkXJp/'>View App</a></p>
+			      <p><a href='https://codepen.io/Aristocles/full/wzkXJp/' target='_blank'>View App</a></p>
 			    </div>
 			  </div>
 			</section>

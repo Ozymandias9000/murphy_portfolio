@@ -101,13 +101,13 @@ section .project-text  {
 /* --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
 	.panels-container {
-		display: grid;
-		grid: 1fr / 1fr;
+		display: flex;
     flex-direction: column;
+    height: 3500px;
 	}
 
 	.panel {
-		min-height: 600px;
+		min-height: 500px;
 	}
 
 .panel > *:first-child { transform: translateX(-100%); font-size: 0; }

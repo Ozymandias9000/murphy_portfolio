@@ -20,10 +20,7 @@ class Nav extends React.Component {
 		return (
 			<nav>
 				<a href='#home' id='home'>Home</a>
-				<span></span>
-				<div className="collapsible-menu">
-					 	<input type="checkbox" id="menu" />
-			      <label htmlFor='menu' id='menuIcon' onClick={this.toggleMenu}></label>
+					 	
 					<div className='menu-content'>	
 						<ul className={this.state.active ? 'menu-open': 'menu-closed'}>
 							<li><a href='#about'>About</a></li>
@@ -32,7 +29,7 @@ class Nav extends React.Component {
 							<li><a href='#projects'>Projects</a></li>
 						</ul>
 					</div> 
-				</div>	
+				
 			</nav>
 			);
 		}
