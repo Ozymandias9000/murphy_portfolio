@@ -44,9 +44,9 @@ class Projects extends Component {
 			      <p><a href='https://ozymandias9000.github.io/background-generator/' target='_blank'>View App</a></p>
 			    </div>
 			    <div className="panel panel3">
-			      <p><a href='https://github.com/Ozymandias9000/todolocalstorage/' target='_blank'>View on GitHub</a></p>
+			      <p><a href='https://github.com/Ozymandias9000/todolocalstorage/' target='_blank'>View Source</a></p>
 			      <p>To-Do with Local Storage</p>
-			      <p><a href='https://ozymandias9000.github.io/background-generator/' target='_blank'>View App</a></p>
+			      <p><a href='https://ozymandias9000.github.io/todolocalstorage/' target='_blank'>View App</a></p>
 			    </div>
 			    <div className="panel panel4">
 			      <p><a href='https://codepen.io/Aristocles/pen/gmyrme' target='_blank'>View on CodePen</a></p>
@@ -54,9 +54,9 @@ class Projects extends Component {
 			      <p><a href='https://codepen.io/Aristocles/full/gmyrme/' target='_blank'>View App</a></p>
 			    </div>
 			    <div className="panel panel5">
-			      <p><a href='https://github.com/Ozymandias9000/background-generator/' target='_blank'>View on GitHub</a></p>
+			      <p><a href='https://codesandbox.io/s/xp9l8jm5yz/' target='_blank'>View on CodeSandbox</a></p>
 			      <p>React Coin</p>
-			      <p><a href='https://ozymandias9000.github.io/background-generator/' target='_blank'>View App</a></p>
+			      <p><a href='https://codesandbox.io/s/xp9l8jm5yz/' target='_blank'>View App</a></p>
 			    </div>
 			    <div className="panel panel6">
 			      <p><a href='https://codepen.io/Aristocles/pen/wzkXJp' target='_blank'>View on CodePen</a></p>

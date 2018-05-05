@@ -47,6 +47,7 @@ section .project-text  {
       align-items: center;
       display: flex;
       flex-direction: column;
+
     }
 
     .panel1 { background-image:url(../../img/img-smart-brain.png); }
@@ -78,6 +79,7 @@ section .project-text  {
       text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
       cursor: pointer;
       line-height: 50px;
+      overflow: hidden;
     }
     
     .panel a {
