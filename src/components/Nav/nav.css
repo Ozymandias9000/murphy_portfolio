@@ -1,54 +1,134 @@
-nav {
+/* Add a black background color to the top navigation */
+.nav {
 	background-color: #303030;
 	letter-spacing: 2px;
-	height: 60px;
+	height: auto;
 	width: 100vw;
 	white-space: nowrap;
 	display: grid;
-	grid: 60px / 1fr 1fr;
-	justify-items: start;
-	padding: 0 20px 0 20px;
-	align-items: center;
-	border-bottom: 5px solid #BADA55;
-	position: fixed;
-}
-
-.menu-content {
-	grid-column: 3 / span 1 ;
-	justify-self: end;
-}
-
-.menu-content ul {
-	display: grid;
-	grid: 60px / 1fr 1fr 1fr 1fr;
-	justify-items: end;
+	grid: 60px / repeat(6, 1fr);
+	justify-items: center;
 	align-items: center;
 	grid-gap: 30px;
+	padding: 0;
+	margin: 0;
+	border-bottom: 5px solid #BADA55;
+	position: fixed;
+  overflow: hidden;
 }
 
-nav a, nav li {
-	color: hsla(0,100%,100%, .9);
-	text-decoration: none;
-	cursor: pointer;
-	transition: all .2s;
-	list-style: none;
+.nav #home {
+	justify-self: start;
+}
+.nav #about {
+	grid-column: span 1/ 4;
 }
 
-nav a:hover, nav a:active {
-	color: hsla(0,100%,100%, .4);
+/* Style the links inside the navigation bar */
+.nav a, .nav--responsive a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all .2s;
 }
 
-#menuIcon {
-	display: none;
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
-/*@media only screen and (max-width: 900px) {
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
 
-	#menuIcon {
-		display: block;
+/* Hide the link that should open and close the topnav on small screens */
+.nav .icon {
+    display: none;
+}
+
+/* Menu Icon */
+
+.menuIcon {
+	display: block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 32px;
+    height: 4px;
+    background-color: #f2f2f2;
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    grid-column: span 1/ -1;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 700px) {
+	.nav--responsive {
+		background-color: #303030;
+		letter-spacing: 2px;
+		height: auto;
+		width: 100vw;
+		white-space: nowrap;
+		display: grid;
+		grid:  repeat(6, 1fr) ;
+		justify-items: center;
+		align-items: center;
+		top: -300px;
+		transform: translateY(300px);
+		border-bottom: 5px solid #BADA55;
+		position: fixed;
+	  overflow: hidden;
+	  transition: all 0.3s;
 	}
 
-	.menu-open {
-		box-shadow: 1px 2px 3px 0px;
-	}
-}*/
+  .nav--responsive .icon {
+    position: absolute;
+    border: none;
+    right: 25px;
+    top: 0;
+  }
+
+  .nav--responsive a {
+  	border-top: 2px solid #BADA55;
+    display: block;
+    text-align: left;
+    padding: 20px 0 20px 0;
+  }
+
+  .nav--responsive a:first-child {
+  	border-top: none;
+  }
+}

@@ -10,26 +10,26 @@ class Nav extends React.Component {
     };
   }
 
-	toggleMenu = (e) => {
-		console.log(e.target)
-		const currentState = this.state.active;
-    this.setState({ active: !currentState });	
-	}
+	 toggleMenu = () => {
+			this.setState(prevState => ({ active: !prevState.active }))
+			console.log(this.state.active);
+		};
 
 	render() {
 		return (
-			<nav>
+			<nav className={this.state.active ? 'nav' : 'nav--responsive'}>
 				<a href='#home' id='home'>Home</a>
-					 	
-					<div className='menu-content'>	
-						<ul className={this.state.active ? 'menu-open': 'menu-closed'}>
-							<li><a href='#about'>About</a></li>
-							<li><a href='#contact'>Contact</a></li>
-							<li><a href='#resume'>Resume</a></li>
-							<li><a href='#projects'>Projects</a></li>
-						</ul>
-					</div> 
-				
+				<a href='#about'>About</a>
+				<a href='#contact'>Contact</a>
+				<a href='#resume'>Resume</a>
+				<a href='#projects'>Projects</a>
+				<a href="javascript:void(0)" className="icon">
+					<div className='menuIcon' onClick={this.toggleMenu}>
+					  <div className="bar1"></div>
+					  <div className="bar2"></div>
+					  <div className="bar3"></div>
+					</div>
+				</a>
 			</nav>
 			);
 		}
