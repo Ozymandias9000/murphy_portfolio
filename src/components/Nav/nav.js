@@ -6,13 +6,14 @@ class Nav extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {
-        active: false,
+        active: true,
     };
   }
 
-	 toggleMenu = () => {
+	 toggleMenu = (e) => {
 			this.setState(prevState => ({ active: !prevState.active }))
-			console.log(this.state.active);
+			e.currentTarget.classList.toggle('change');
+			console.log(this.state.active, e.currentTarget);
 		};
 
 	render() {
@@ -23,13 +24,11 @@ class Nav extends React.Component {
 				<a href='#contact'>Contact</a>
 				<a href='#resume'>Resume</a>
 				<a href='#projects'>Projects</a>
-				<a href="javascript:void(0)" className="icon">
 					<div className='menuIcon' onClick={this.toggleMenu}>
 					  <div className="bar1"></div>
 					  <div className="bar2"></div>
 					  <div className="bar3"></div>
 					</div>
-				</a>
 			</nav>
 			);
 		}

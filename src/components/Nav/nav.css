@@ -7,7 +7,7 @@
 	white-space: nowrap;
 	display: grid;
 	grid: 60px / repeat(6, 1fr);
-	justify-items: center;
+	justify-items: start;
 	align-items: center;
 	grid-gap: 30px;
 	padding: 0;
@@ -15,13 +15,6 @@
 	border-bottom: 5px solid #BADA55;
 	position: fixed;
   overflow: hidden;
-}
-
-.nav #home {
-	justify-self: start;
-}
-.nav #about {
-	grid-column: span 1/ 4;
 }
 
 /* Style the links inside the navigation bar */
@@ -48,7 +41,7 @@
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.nav .icon {
+.nav .menuIcon {
     display: none;
 }
 
@@ -70,8 +63,8 @@
 
 /* Rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px) ;
+    transform: rotate(-45deg) translate(-7px, 6px) ;
 }
 
 /* Fade out the second bar */
@@ -88,9 +81,11 @@
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 700px) {
   .nav a:not(:first-child) {display: none;}
-  .nav a.icon {
+  .nav .menuIcon {
     grid-column: span 1/ -1;
     display: block;
+    justify-self: end;
+    padding-right: 20px;
   }
 }
 
@@ -114,11 +109,11 @@
 	  transition: all 0.3s;
 	}
 
-  .nav--responsive .icon {
+  .nav--responsive .menuIcon {
     position: absolute;
     border: none;
-    right: 25px;
-    top: 0;
+    right: 20px;
+    top: 12px;
   }
 
   .nav--responsive a {
