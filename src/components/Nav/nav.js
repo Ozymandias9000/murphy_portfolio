@@ -13,7 +13,6 @@ class Nav extends React.Component {
 	 toggleMenu = (e) => {
 			this.setState(prevState => ({ active: !prevState.active }))
 			e.currentTarget.classList.toggle('change');
-			console.log(this.state.active, e.currentTarget);
 		};
 
 	render() {
