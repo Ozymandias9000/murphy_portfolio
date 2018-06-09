@@ -1,10 +1,11 @@
 footer {
-	position: relative;
-	padding-top: 50px;
-	padding-bottom: 30px;
-	border-top: 4px solid #BADA55;
-	width:100%;
-	background:#303030;
-	font-size: 14px;
-	text-align: center;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border-top: 4px solid #bada55;
+  width: 100%;
+  background: var(--black);
+  font-size: 14px;
+  text-align: center;
+  color: #c0ffee;
 }

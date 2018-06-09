@@ -9,7 +9,7 @@ const AboutMe = props => (
 					About Me
 			</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sed sapiente debitis quibusdam cumque consequuntur, ipsam hic omnis laudantium ex, qui corporis nemo nostrum obcaecati quis fuga soluta nobis atque?
+				I'm a developer working in Phoenix. When I'm not coding, I love hiking, playing guitar, and cooking!
 			</p>
 			<span id='contact'></span>
 			<h2>
@@ -17,11 +17,10 @@ const AboutMe = props => (
 			</h2>
 			<p>
 				Nick Murphy <br />
-				Lalala <br />
-				City <br />
-				nick_murphy@sbcglobal.net <br />	
+				Phoenix, AZ <br />
+				nick_murphy@sbcglobal.net <br />
 			</p>
-			
+
 			<a href=''>
 				<button className='about-me__button'>
 					Download Resume

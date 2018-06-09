@@ -1,28 +1,28 @@
 .about-me {
-	height: auto;
-	display: grid;
-	justify-content: center;
-	background: #D5AAAA;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  background: #d5aaaa;
 }
 
 .about-me__text {
-	color: hsla(0,0%,0%, .8);
-	width: 80vw;
+  color: hsla(0, 0%, 0%, 0.8);
+  width: 80vw;
 }
 
 .about-me__text h2 {
-	color: #C0FFEE;
-	width: 80vw;
+  color: #c0ffee;
+  width: 80vw;
 }
 
 #about {
-	margin-top: -100px;   
-  padding-bottom: 100px; 
-  display: block; 
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
 }
 
 #contact {
-	margin-top: -100px;   
-  padding-bottom: 100px; 
-  display: block; 
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
 }
