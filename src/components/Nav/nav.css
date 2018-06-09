@@ -83,11 +83,12 @@
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 700 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.menuIcon) */
 @media screen and (max-width: 700px) {
   .nav a:not(:first-child) {
     display: none;
   }
+
   .nav .menuIcon {
     grid-column: span 1/ -1;
     display: block;
@@ -96,16 +97,17 @@
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* The "responsive" class is swapped with "nav" class with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 700px) {
   .nav--responsive {
-    background-color: #303030;
+    background-color: var(--black);
     letter-spacing: 2px;
     height: auto;
     width: 100vw;
     white-space: nowrap;
     display: grid;
-    grid: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
     justify-items: center;
     align-items: center;
     top: -300px;
@@ -114,6 +116,10 @@
     position: fixed;
     overflow: hidden;
     transition: all 0.3s;
+  }
+
+  .nav--responsive a:not(:first-child) {
+    display: block;
   }
 
   .nav--responsive .menuIcon {
