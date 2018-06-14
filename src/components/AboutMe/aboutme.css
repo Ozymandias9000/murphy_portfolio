@@ -1,18 +1,34 @@
 .about-me {
-  height: auto;
+  height: 80vh;
   display: grid;
+  grid: auto / 10% auto 10%;
   justify-content: center;
-  background: #d5aaaa;
+  align-items: center;
+  background: #0cebeb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
+  background: -moz-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
+  background: -o-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
+  background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
+  background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1.25rem;
 }
 
-.about-me__text {
-  color: hsla(0, 0%, 0%, 0.8);
-  width: 80vw;
+.about-me--container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / span 1;
 }
 
-.about-me__text h2 {
-  color: #c0ffee;
-  width: 80vw;
+.about-me img {
+  float: right;
+  width: 160px;
+  height: 180px;
+  border-radius: 50%;
 }
 
 #about {

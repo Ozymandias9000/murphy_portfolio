@@ -1,14 +1,22 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
-
 section {
   width: 100vw;
   min-height: 600px;
   height: auto;
+  background: #0cebeb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
+  background: -moz-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
+  background: -o-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
+  background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
+  background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 section .project-text {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 100px 0 50px 0;
+  font-size: 1.5rem;
 }
 
 #projects {
@@ -22,29 +30,39 @@ section .project-text {
   overflow: hidden;
   min-height: 600px;
   height: auto;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  padding: 50px;
+  margin: 0 8% 0 8%;
+  grid-gap: 50px;
+  grid: 50vh 50vh / 50% 50%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
 }
 
 .panel {
+  height: 100%;
   background: #6b0f9c;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
   color: var(--black);
   text-align: center;
   /* Safari transitionend event.propertyName === flex */
   /* Chrome + FF transitionend event.propertyName === flex-grow */
-  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  transition: font-size 0.5s, transform 0.5s;
   font-size: 0.5em;
-  font-weight: 600;
   background-size: cover;
   background-position: center;
-  flex: 1;
-  min-width: 150px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.panel:hover,
+.panel:focus {
+  font-size: 0.6rem;
+  transform: scale(1.1);
 }
 
 .panel1 {
@@ -58,104 +76,47 @@ section .project-text {
 }
 .panel4 {
   background-image: url(../../img/img-pomo-clock.png);
-  color: white;
 }
-.panel5 {
+/* .panel5 {
   background-image: url(../../img/img-react-coin.png);
   color: white;
 }
 .panel6 {
   background-image: url(../../img/img-wiki-search.png);
   color: white;
-}
+} */
 
 .panel > * {
   margin: 0;
   width: 100%;
-  transition: transform 0.5s;
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.panel > *:first-child {
-  transform: translateY(-100%);
-  font-size: 0;
-}
-.panel.open-active > *:first-child {
-  transform: translateY(0%);
-  font-size: 2em;
-}
-.panel > *:last-child {
-  transform: translateY(100%);
-  font-size: 0;
-}
-.panel.open-active > *:last-child {
-  transform: translateY(0%);
-  font-size: 2em;
-}
-
 .panel p {
   text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   cursor: pointer;
   line-height: 50px;
   overflow: hidden;
 }
 
-.panel a {
-  color: white;
-  font-size: 60px;
-}
-
 .panel p:nth-child(2) {
-  font-size: 6em;
-}
-
-.panel.open {
-  flex: 5;
-  font-size: 20px;
-}
-
-.panel.open p {
-  line-height: 150px;
+  font-size: 4em;
 }
 
 /* --------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
   .panels-container {
-    display: flex;
-    flex-direction: column;
-    height: 3500px;
+    margin: 0;
   }
+}
 
-  .panel {
-    min-height: 500px;
-  }
-
-  .panel > *:first-child {
-    transform: translateX(-100%);
-    font-size: 0;
-  }
-  .panel.open-active > *:first-child {
-    transform: translateX(0%);
-    font-size: 2em;
-  }
-  .panel > *:last-child {
-    transform: translateX(100%);
-    font-size: 0;
-  }
-  .panel.open-active > *:last-child {
-    transform: translateX(0%);
-    font-size: 1em;
-  }
-
-  .panel5 {
-    background-size: cover;
-  }
-  .panel6 {
-    background-size: cover;
+@media only screen and (max-width: 800px) {
+  .panels-container {
+    min-height: 2000px;
+    grid: 100% / 100%;
   }
 }

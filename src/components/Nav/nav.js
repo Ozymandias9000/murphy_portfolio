@@ -23,13 +23,10 @@ class Nav extends React.Component {
             : "nav nav--responsive"
         }
       >
-        <a href="#home" id="home">
-          Home
-        </a>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#resume">Resume</a>
         <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
         <div className="menuIcon" onClick={this.toggleMenu}>
           <div className="bar1" />
           <div className="bar2" />
