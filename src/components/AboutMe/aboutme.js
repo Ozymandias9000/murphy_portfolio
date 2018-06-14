@@ -12,7 +12,7 @@ const AboutMe = props => (
           hiking, playing guitar, and cooking!
         </p>
         <span id="contact" />
-        <img src="./images/IMG_20160109_094504828.jpg" alt="Nick Murphy" />
+        <img src="./images/murphy_photo.jpg" alt="Nick Murphy" />
         <h2>Contact Details</h2>
         <p>
           Nick Murphy <br />

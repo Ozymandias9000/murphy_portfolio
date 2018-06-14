@@ -1,16 +1,10 @@
 section {
+  /* display: relative;
+  margin-top: -8px; */
   width: 100vw;
   min-height: 600px;
   height: auto;
-  background: #0cebeb; /* fallback for old browsers */
-  background: -webkit-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: -moz-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: -o-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  color: white;
 }
 
 section .project-text {
@@ -20,9 +14,8 @@ section .project-text {
 }
 
 #projects {
-  margin-top: -100px;
-  padding-bottom: 100px;
-  display: block;
+  display: inline-block;
+  height: 0px;
 }
 
 /*--------------Project Flex Gallery------------------------*/

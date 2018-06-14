@@ -8,17 +8,9 @@
 
 :root {
   --black: #111111;
+  --white: #ddd;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  color: var(--black);
-  min-width: 100vw;
-  min-height: 100vh;
 }

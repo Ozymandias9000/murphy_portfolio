@@ -12,8 +12,12 @@
   margin: 0;
   border-bottom: 5px solid #bada55;
   position: fixed;
+  top: 0;
   overflow: hidden;
   z-index: 999;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 /* Style the links inside the navigation bar */

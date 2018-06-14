@@ -7,12 +7,16 @@ const Header = props => (
     <span id="home" />
     <Nav />
     <div className="banner-text">
-      <h1>I'm Nick Murphy,</h1>
-      <h3>and I'm obsessed with web development.</h3>
-      <div className="arrow--container">
-        <i className="arrow--down" />
-      </div>
+      <h1>Nick Murphy</h1>
+      <h3>...</h3>
+      <br />
+      <h3>is obsessed with web development.</h3>
     </div>
+    {/* <div className="wrapper--arrow"> */}
+    <div className="arrow--container">
+      <i className="arrow--down" />
+    </div>
+    {/* </div> */}
   </header>
 );
 
