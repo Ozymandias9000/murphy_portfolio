@@ -2,25 +2,6 @@ import React, { Component } from "react";
 import "./projects.css";
 
 class Projects extends Component {
-  componentDidMount() {
-    const panels = document.querySelectorAll(".panel");
-
-    function toggleOpen() {
-      this.classList.toggle("open");
-    }
-
-    function toggleActive(e) {
-      if (e.propertyName.includes("flex")) {
-        this.classList.toggle("open-active");
-      }
-    }
-
-    panels.forEach(panel => panel.addEventListener("click", toggleOpen));
-    panels.forEach(panel =>
-      panel.addEventListener("transitionend", toggleActive)
-    );
-  }
-
   render() {
     return (
       <section>
@@ -41,6 +22,7 @@ class Projects extends Component {
               </a>{*/}{" "}
             </p>
             <p>
+              Smart Brain
               {/*<a
                 href="https://github.com/Ozymandias9000/face-recog/"
                 target="_blank"
@@ -60,8 +42,9 @@ class Projects extends Component {
                 View Source
               </a>{*/}
             </p>
-            <p>Background Generator</p>
+            <p />
             <p>
+              Background Generator
               {/*<a
                 href="https://ozymandias9000.github.io/background-generator/"
                 target="_blank"
@@ -81,8 +64,9 @@ class Projects extends Component {
                 View Source
               </a>{*/}
             </p>
-            <p>To-Do with Local Storage</p>
+            <p />
             <p>
+              To-Do with Local Storage
               {/*<a
                 href="https://ozymandias9000.github.io/todolocalstorage/"
                 target="_blank"
@@ -102,8 +86,9 @@ class Projects extends Component {
                 View on CodePen
               </a>{*/}
             </p>
-            <p>Pomodoro Clock</p>
+            <p />
             <p>
+              Pomodoro Clock
               {/*<a
                 href="https://codepen.io/Aristocles/full/gmyrme/"
                 target="_blank"

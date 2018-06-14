@@ -23,7 +23,9 @@ class Nav extends React.Component {
             : "nav nav--responsive"
         }
       >
-        <a href="#home">Home</a>
+        <a href="#home" id="home">
+          Home
+        </a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#resume">Resume</a>

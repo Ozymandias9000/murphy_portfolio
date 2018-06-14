@@ -19,6 +19,7 @@ const AboutMe = props => (
           Phoenix, AZ <br />
           nick_murphy@sbcglobal.net <br />
         </p>
+        <em>Resume coming soon!</em>
         {/* <a href="">
           <button className="about-me__button">Download Resume</button>
         </a> */}

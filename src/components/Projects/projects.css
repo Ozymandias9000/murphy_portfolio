@@ -27,7 +27,6 @@ section .project-text {
 
 /*--------------Project Flex Gallery------------------------*/
 .panels-container {
-  overflow: hidden;
   min-height: 600px;
   height: auto;
   display: grid;
@@ -50,7 +49,6 @@ section .project-text {
   /* Safari transitionend event.propertyName === flex */
   /* Chrome + FF transitionend event.propertyName === flex-grow */
   transition: font-size 0.5s, transform 0.5s;
-  font-size: 0.5em;
   background-size: cover;
   background-position: center;
   justify-content: center;
@@ -101,10 +99,7 @@ section .project-text {
   cursor: pointer;
   line-height: 50px;
   overflow: hidden;
-}
-
-.panel p:nth-child(2) {
-  font-size: 4em;
+  font-size: 2rem;
 }
 
 /* --------------------------------------------------------------------- */
@@ -114,7 +109,7 @@ section .project-text {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .panels-container {
     min-height: 2000px;
     grid: 100% / 100%;
