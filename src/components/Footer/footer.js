@@ -1,10 +1,16 @@
-import React from 'react';
-import './footer.css';
+import React from "react";
+import "./footer.css";
 
 const Footer = props => (
-	<footer>
-		<p>Developed in React ⚛️ | Nick Murphy</p>
-	</footer>
+  <footer>
+    <p>
+      Developed in React{" "}
+      <span role="img" aria-label="react logo">
+        ⚛️
+      </span>{" "}
+      | Nick Murphy
+    </p>
+  </footer>
 );
 
 export default Footer;
