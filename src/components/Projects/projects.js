@@ -33,7 +33,7 @@ class Projects extends Component {
 				</div>
 
 				<div className="panels-container">
-			    <div className="panel panel1">
+			    {/* <div className="panel panel1">
 			      <p><a href='https://github.com/Ozymandias9000/face-recog/' target='_blank' rel='noopener noreferrer' >View Source</a></p>
 			      <p>Smart Brain</p>
 			      <p><a href='https://smart-brain-nm.herokuapp.com/' target='_blank' rel='noopener noreferrer'>View App on Heroku</a></p>
@@ -62,7 +62,7 @@ class Projects extends Component {
 			      <p><a href='https://codepen.io/Aristocles/pen/wzkXJp' target='_blank' rel='noopener noreferrer'>View on CodePen</a></p>
 			      <p>Wikipedia Search</p>
 			      <p><a href='https://codepen.io/Aristocles/full/wzkXJp/' target='_blank' rel='noopener noreferrer'>View App</a></p>
-			    </div>
+			    </div> */}
 			  </div>
 			</section>
 		);
