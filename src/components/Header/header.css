@@ -25,6 +25,7 @@ header > .banner-text {
   text-align: center;
   height: 300px;
   width: 80vw;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.72);
 }
 
 .arrow--container {

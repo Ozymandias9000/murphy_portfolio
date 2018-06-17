@@ -11,6 +11,8 @@ section .project-text {
   text-align: center;
   margin: 100px 0 50px 0;
   font-size: 1.5rem;
+
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.72);
 }
 
 #projects {
@@ -20,13 +22,13 @@ section .project-text {
 
 /*--------------Project Flex Gallery------------------------*/
 .panels-container {
-  min-height: 600px;
+  min-height: 1400px;
   height: auto;
   display: grid;
   padding: 50px;
   margin: 0 8% 0 8%;
   grid-gap: 50px;
-  grid: 50vh 50vh / 50% 50%;
+  grid: repeat(auto-fit, 500px) / repeat(auto-fill, 40%);
   justify-content: center;
   align-items: center;
   transition: all 0.2s;
@@ -35,13 +37,13 @@ section .project-text {
 .panel {
   height: 100%;
   background: #6b0f9c;
-  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 1px 3px 1px #444;
   border: 2px solid black;
   color: var(--black);
   text-align: center;
   /* Safari transitionend event.propertyName === flex */
   /* Chrome + FF transitionend event.propertyName === flex-grow */
-  transition: font-size 0.5s, transform 0.5s;
+  transition: font-size 0.3s, transform 0.3s;
   background-size: cover;
   background-position: center;
   justify-content: center;
@@ -53,7 +55,7 @@ section .project-text {
 .panel:hover,
 .panel:focus {
   font-size: 0.6rem;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .panel1 {
@@ -68,11 +70,10 @@ section .project-text {
 .panel4 {
   background-image: url(../../img/img-pomo-clock.png);
 }
-/* .panel5 {
-  background-image: url(../../img/img-react-coin.png);
-  color: white;
+.panel5 {
+  background-image: url(../../img/img-drinkful.jpg);
 }
-.panel6 {
+/*.panel6 {
   background-image: url(../../img/img-wiki-search.png);
   color: white;
 } */
@@ -88,7 +89,7 @@ section .project-text {
 
 .panel p {
   text-transform: uppercase;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.72), 0 0 10px rgba(0, 0, 0, 0.45);
   cursor: pointer;
   line-height: 50px;
   overflow: hidden;
@@ -105,6 +106,9 @@ section .project-text {
 @media only screen and (max-width: 1000px) {
   .panels-container {
     min-height: 2000px;
-    grid: 100% / 100%;
+    grid: 100% / 75%;
+  }
+  .panel {
+    height: 400px;
   }
 }
