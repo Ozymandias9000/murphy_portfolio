@@ -101,18 +101,18 @@ class Projects extends Component {
           <div className="panel panel5">
             <p>
               {/*<a
-                href="https://codepen.io/Aristocles/pen/gmyrme"
+                href="https://github.com/Ozymandias9000/drinkful_v1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View on CodePen
+                View on GitHub
               </a>{*/}
             </p>
             <p />
             <p>
-              Drinkful
+              Drinkful (API)
               {/*<a
-                href="https://codepen.io/Aristocles/full/gmyrme/"
+                href="https://drinkful-athpeiqvoa.now.sh/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
