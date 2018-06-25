@@ -5,7 +5,8 @@ body {
   color: var(--black);
   min-width: 100vw;
   min-height: 100vh;
-  background: #b28709;
+  /* background: #398296; */
+  background: #ddd;
 }
 
 h1 {

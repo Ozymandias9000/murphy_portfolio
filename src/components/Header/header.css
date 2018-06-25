@@ -19,6 +19,7 @@ header {
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
   font-size: 1.2rem;
+  z-index: 2;
 }
 
 header > .banner-text {
@@ -37,7 +38,7 @@ header > .banner-text {
 }
 
 i.arrow--down {
-  background: rgb(242, 114, 84);
+  background: linear-gradient(rgb(242, 114, 84) 0%, rgb(240, 100, 87) 100%);
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   position: absolute;

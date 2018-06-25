@@ -1,81 +1,67 @@
-section {
-  /* display: relative;
-  margin-top: -8px; */
+.projects-container {
   width: 100vw;
-  min-height: 600px;
-  height: auto;
-  color: white;
+  min-height: 500px;
 }
 
-section .project-text {
-  text-align: center;
-  margin: 100px 0 50px 0;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.72);
+.projects-container img {
+  width: 100vw;
+  background-size: cover;
 }
 
 #projects {
-  display: inline-block;
+  display: hidden;
   height: 0px;
 }
 
-/*--------------Project Flex Gallery------------------------*/
 .panels-container {
-  min-height: 1400px;
-  height: auto;
+  position: relative;
+  top: -8px;
+  height: 492px;
+  width: 100vw;
   display: grid;
-  padding: 50px;
-  margin: 0 8% 0 8%;
-  grid-gap: 50px;
-  grid: repeat(auto-fit, 500px) / repeat(auto-fill, 40%);
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s;
 }
 
 .panel {
   height: 100%;
   background: #6b0f9c;
-  box-shadow: 2px 1px 3px 1px #444;
-  border: 2px solid black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   color: var(--black);
   text-align: center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
-  transition: font-size 0.3s, transform 0.3s;
   background-size: cover;
   background-position: center;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s;
 }
 
 .panel:hover,
 .panel:focus {
-  font-size: 0.6rem;
   transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  z-index: 999;
 }
 
 .panel1 {
+  background-image: url(../../img/img-drinkful.jpg);
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.panel2 {
+  background-image: url(../../img/img-todo.png);
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.panel3 {
   background-image: url(../../img/img-smart-brain.png);
 }
-.panel2 {
-  background-image: url(../../img/img-background-gen.png);
-}
-.panel3 {
-  background-image: url(../../img/img-todo.png);
-}
-.panel4 {
-  background-image: url(../../img/img-pomo-clock.png);
-}
-.panel5 {
-  background-image: url(../../img/img-drinkful.jpg);
-}
-/*.panel6 {
-  background-image: url(../../img/img-wiki-search.png);
-  color: white;
-} */
 
 .panel > * {
   margin: 0;
@@ -88,7 +74,7 @@ section .project-text {
 
 .panel p {
   text-transform: uppercase;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.72), 0 0 10px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.72), 0 0 6px rgba(0, 0, 0, 0.45);
   cursor: pointer;
   line-height: 50px;
   overflow: hidden;
@@ -96,7 +82,7 @@ section .project-text {
 }
 
 /* --------------------------------------------------------------------- */
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
   .panels-container {
     margin: 0;
   }
@@ -104,10 +90,10 @@ section .project-text {
 
 @media only screen and (max-width: 1000px) {
   .panels-container {
-    min-height: 2000px;
+    min-height: 600px;
     grid: 100% / 75%;
   }
   .panel {
     height: 400px;
   }
-}
+} */

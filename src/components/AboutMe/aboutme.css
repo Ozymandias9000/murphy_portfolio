@@ -4,15 +4,8 @@
   grid: auto / 10% auto 10%;
   justify-content: center;
   align-items: center;
-  background: #0cebeb; /* fallback for old browsers */
-  background: -webkit-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: -moz-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: -o-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: #f16b56;
+  color: white;
   font-size: 1.25rem;
 }
 
