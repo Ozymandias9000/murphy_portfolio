@@ -1,11 +1,13 @@
 .projects-container {
   width: 100vw;
-  min-height: 500px;
+  min-height: 100%;
+  position: relative;
 }
 
 .projects-container img {
   width: 100vw;
   background-size: cover;
+  background: #bad;
 }
 
 #projects {
@@ -15,12 +17,11 @@
 
 .panels-container {
   position: relative;
-  top: -8px;
-  height: 492px;
+  height: 1000px;
   width: 100vw;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 500px;
+  grid-template-rows: 500px 500px;
   justify-content: center;
   align-items: center;
 }
@@ -37,7 +38,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s;
+  transition: 0.5s ease;
 }
 
 .panel:hover,
@@ -47,32 +48,31 @@
   z-index: 999;
 }
 
-.panel1 {
-  background-image: url(../../img/img-drinkful.jpg);
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-}
-
-.panel2 {
-  background-image: url(../../img/img-todo.png);
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-}
-
-.panel3 {
-  background-image: url(../../img/img-smart-brain.png);
-}
-
-.panel > * {
+.overlay {
+  background: black;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  position: relative;
   margin: 0;
   width: 100%;
   flex: 1 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
+.overlay:hover,
+.overlay:focus {
+  opacity: 0.8;
+}
 
-.panel p {
+.overlay p {
+  padding: 10px;
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.72), 0 0 6px rgba(0, 0, 0, 0.45);
   cursor: pointer;
@@ -81,19 +81,59 @@
   font-size: 2rem;
 }
 
+.overlay a {
+  text-decoration: none;
+  color: #22aaff;
+}
+
+.panel1 {
+  background: url(../../img/img-drinkful.jpg);
+  background-size: cover;
+}
+
+.panel2 {
+  background-image: url(../../img/img-todo.png);
+}
+
+.panel3 {
+  background-image: url(../../img/img-smart-brain.png);
+}
+
+.panel4 {
+  background-image: url(../../img/img-pomo-clock.png);
+}
+
 /* --------------------------------------------------------------------- */
-/* @media only screen and (max-width: 1300px) {
-  .panels-container {
+/* @media only screen and (max-width: 1300px) { */
+/* .panels-container {
     margin: 0;
   }
 }
-
+*/
 @media only screen and (max-width: 1000px) {
   .panels-container {
-    min-height: 600px;
-    grid: 100% / 75%;
+    height: 1600px;
+    grid: repeat(4, 400px) / 100%;
   }
   .panel {
+    grid-column: 1/-1;
     height: 400px;
+    width: 100vw;
+    background-position: center top;
+  }
+
+  .panel:hover,
+  .panel:focus {
+    transform: none;
+  }
+
+  .overlay {
+    opacity: 0.8;
+    border: 2px solid #bada55;
+  }
+}
+/* .panels-container {
+    height: 800px;
+    grid: 400px / 400px;
   }
 } */

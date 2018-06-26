@@ -10,50 +10,102 @@ class Projects extends Component {
           alt="pic"
         />
 
+        <h1>...</h1>
+        <span id="projects" />
         <section className="panels-container">
-          <span id="projects" />
           <div className="panel panel1">
-            <p>
-              {/*<a
-                href="https://github.com/Ozymandias9000/drinkful_v1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View on GitHub
-              </a>{*/}
-            </p>
-
-            <p>
-              Drinkful
-              {/*<a
-                href="https://drinkful-athpeiqvoa.now.sh/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View App
-              </a>{*/}
-            </p>
+            <div className="overlay">
+              <p>
+                <a
+                  href="https://github.com/Ozymandias9000/drinkful_v1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </p>
+              <p>Drinkful (w/ API)</p>
+              <p>
+                <a
+                  href="https://drinkful-athpeiqvoa.now.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View App
+                </a>
+              </p>
+            </div>
           </div>
+
           <div className="panel panel2">
-            <p>
-              {/*<a
-                href="https://github.com/Ozymandias9000/todolocalstorage/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Source
-              </a>{*/}
-            </p>
-            <p>
-              To-Do List (Local Storage)
-              {/*<a
-                href="https://ozymandias9000.github.io/todolocalstorage/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View App
-              </a>{*/}
-            </p>
+            <div className="overlay">
+              <p>
+                <a
+                  href="https://github.com/Ozymandias9000/todolocalstorage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Source
+                </a>
+              </p>
+              <p>To-Do List (Local Storage)</p>
+              <p>
+                <a
+                  href="https://ozymandias9000.github.io/todolocalstorage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View App
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className="panel panel3">
+            <div className="overlay">
+              <p>
+                <a
+                  href="https://github.com/Ozymandias9000/todolocalstorage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Source
+                </a>
+              </p>
+              <p>Drinkful (w/ Web Scraping)</p>
+              <p>
+                <a
+                  href="https://ozymandias9000.github.io/todolocalstorage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View App
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="panel panel4">
+            <div className="overlay">
+              <p>
+                <a
+                  href="https://github.com/Ozymandias9000/todolocalstorage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Source
+                </a>
+              </p>
+              <p>Now That's Delicious!</p>
+              <p>
+                <a
+                  href="https://ozymandias9000.github.io/todolocalstorage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View App
+                </a>
+              </p>
+            </div>
           </div>
         </section>
       </div>
