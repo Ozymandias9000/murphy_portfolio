@@ -6,28 +6,28 @@ class Projects extends Component {
     return (
       <div className="projects-container">
         <img
-          src="https://cdn.tourradar.com/s3/tour/original/93351_905da8be.jpg"
-          alt="pic"
+          src="./images/Nick_Yvonne.JPG"
+          alt="Nick & Yvonne Murphy in Iceland"
         />
 
-        <h1>...</h1>
         <span id="projects" />
+        <h1>Projects</h1>
         <section className="panels-container">
           <div className="panel panel1">
             <div className="overlay">
               <p>
                 <a
-                  href="https://github.com/Ozymandias9000/drinkful_v1"
+                  href="https://github.com/Ozymandias9000/drinkful"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   View on GitHub
                 </a>
               </p>
-              <p>Drinkful (w/ API)</p>
+              <p>Drinkful (PWA w/ Web Scraping)</p>
               <p>
                 <a
-                  href="https://drinkful-athpeiqvoa.now.sh/"
+                  href="https://drinkful-murphy.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -45,7 +45,7 @@ class Projects extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Source
+                  View on GitHub
                 </a>
               </p>
               <p>To-Do List (Local Storage)</p>
@@ -65,17 +65,17 @@ class Projects extends Component {
             <div className="overlay">
               <p>
                 <a
-                  href="https://github.com/Ozymandias9000/todolocalstorage/"
+                  href="https://github.com/Ozymandias9000/drinkful_v1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Source
+                  View on GitHub
                 </a>
               </p>
-              <p>Drinkful (w/ Web Scraping)</p>
+              <p>Drinkful (w/ API)</p>
               <p>
                 <a
-                  href="https://ozymandias9000.github.io/todolocalstorage/"
+                  href="https://drinkful-hzlxekwgbi.now.sh/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -84,21 +84,22 @@ class Projects extends Component {
               </p>
             </div>
           </div>
+
           <div className="panel panel4">
             <div className="overlay">
               <p>
                 <a
-                  href="https://github.com/Ozymandias9000/todolocalstorage/"
+                  href="https://github.com/Ozymandias9000/delicious-node-course"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Source
+                  View on GitHub
                 </a>
               </p>
               <p>Now That's Delicious!</p>
               <p>
                 <a
-                  href="https://ozymandias9000.github.io/todolocalstorage/"
+                  href="https://now-thats-delicious-murphy.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -4,10 +4,12 @@
   grid: auto / 10% auto 10%;
   justify-content: center;
   align-items: center;
-  background: #f16b56;
-  color: var(--white);
+  background: white;
+  color: var(--black);
+  border-top: 1px solid var(--black);
   font-size: 1.25rem;
   position: relative;
+  letter-spacing: 2px;
 }
 
 .about-me--container {

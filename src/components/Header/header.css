@@ -22,11 +22,16 @@ header {
   z-index: 2;
 }
 
-header > .banner-text {
+.banner-text {
   text-align: center;
   height: 300px;
   width: 80vw;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.72);
+}
+
+.banner-text h1,
+.banner-text h3 {
+  letter-spacing: 5px;
 }
 
 .arrow--container {
