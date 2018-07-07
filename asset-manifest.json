@@ -1,10 +1,11 @@
 {
-  "main.css": "static/css/main.e3a146c8.css",
-  "main.css.map": "static/css/main.e3a146c8.css.map",
-  "main.js": "static/js/main.03a19021.js",
-  "main.js.map": "static/js/main.03a19021.js.map",
+  "main.css": "static/css/main.cbb7fb7b.css",
+  "main.css.map": "static/css/main.cbb7fb7b.css.map",
+  "main.js": "static/js/main.039b816e.js",
+  "main.js.map": "static/js/main.039b816e.js.map",
   "static/media/img_delicious.png": "static/media/img_delicious.a4cfaa92.png",
   "static/media/img_drinkful.png": "static/media/img_drinkful.0259d04a.png",
   "static/media/img_drinkful_v1.png": "static/media/img_drinkful_v1.10bff0d5.png",
+  "static/media/img_murphystagram.png": "static/media/img_murphystagram.204aaf40.png",
   "static/media/img_todo.png": "static/media/img_todo.3861bb45.png"
 }
