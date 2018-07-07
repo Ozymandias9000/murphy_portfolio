@@ -24,7 +24,9 @@ class Projects extends Component {
                   View on GitHub
                 </a>
               </p>
-              <p>Drinkful (PWA w/ Web Scraping)</p>
+              <p>Drinkful
+                <h6>React PWA, Web Scraping, Stylus </h6>
+              </p>
               <p>
                 <a
                   href="https://drinkful-murphy.herokuapp.com/"
@@ -48,7 +50,10 @@ class Projects extends Component {
                   View on GitHub
                 </a>
               </p>
-              <p>To-Do List (Local Storage)</p>
+              <p>
+                To Do List
+                <h6>LocalStorage, JS, CSS, HTML</h6>
+              </p>
               <p>
                 <a
                   href="https://ozymandias9000.github.io/todolocalstorage/"
@@ -72,7 +77,10 @@ class Projects extends Component {
                   View on GitHub
                 </a>
               </p>
-              <p>Drinkful (w/ API)</p>
+              <p>
+                Drinkful (w/ API)
+                <h6>React, Punk API</h6>
+              </p>
               <p>
                 <a
                   href="https://drinkful-hzlxekwgbi.now.sh/"
@@ -96,10 +104,40 @@ class Projects extends Component {
                   View on GitHub
                 </a>
               </p>
-              <p>Now That's Delicious!</p>
+              <p>
+                Now That's Delicious!
+                <h6>Node/Express, Pug, MongoDB, Passport</h6>
+              </p>
               <p>
                 <a
                   href="https://now-thats-delicious-murphy.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View App
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className="panel panel5">
+            <div className="overlay">
+              <p>
+                <a
+                  href="https://github.com/Ozymandias9000/murphystagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </p>
+              <p>
+                Murphystagram
+                <h6>React, Redux, Firebase</h6>
+              </p>
+              <p>
+                <a
+                  href="https://murphystagram.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
