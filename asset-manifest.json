@@ -1,12 +1,10 @@
 {
-  "main.css": "static/css/main.9a2d14cc.css",
-  "main.css.map": "static/css/main.9a2d14cc.css.map",
-  "main.js": "static/js/main.1506051b.js",
-  "main.js.map": "static/js/main.1506051b.js.map",
-  "static/media/img-background-gen.png": "static/media/img-background-gen.a8a941d1.png",
-  "static/media/img-pomo-clock.png": "static/media/img-pomo-clock.be6849ce.png",
-  "static/media/img-react-coin.png": "static/media/img-react-coin.7be8b884.png",
-  "static/media/img-smart-brain.png": "static/media/img-smart-brain.c1cd7cff.png",
-  "static/media/img-todo.png": "static/media/img-todo.1318d4bd.png",
-  "static/media/img-wiki-search.png": "static/media/img-wiki-search.a2d4966c.png"
+  "main.css": "static/css/main.e3a146c8.css",
+  "main.css.map": "static/css/main.e3a146c8.css.map",
+  "main.js": "static/js/main.03a19021.js",
+  "main.js.map": "static/js/main.03a19021.js.map",
+  "static/media/img_delicious.png": "static/media/img_delicious.a4cfaa92.png",
+  "static/media/img_drinkful.png": "static/media/img_drinkful.0259d04a.png",
+  "static/media/img_drinkful_v1.png": "static/media/img_drinkful_v1.10bff0d5.png",
+  "static/media/img_todo.png": "static/media/img_todo.3861bb45.png"
 }
