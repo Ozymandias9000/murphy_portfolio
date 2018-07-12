@@ -5,11 +5,6 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects-container">
-        <img
-          src="./images/Nick_Yvonne.JPG"
-          alt="Nick & Yvonne Murphy in Iceland"
-        />
-
         <span id="projects" />
         <h1>Projects</h1>
         <section className="panels-container">

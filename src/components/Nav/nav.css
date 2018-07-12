@@ -6,7 +6,7 @@
   white-space: nowrap;
   display: grid;
   grid: 60px / repeat(6, 1fr);
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -33,18 +33,13 @@
 
 /* Change the color of links on hover */
 .nav a:hover {
-  background-color: #ddd;
+  background-color: white;
+  border-radius: 2px;
   color: black;
 }
 
 #home {
   grid-column-start: 2;
-}
-
-/* Add an active class to highlight the current page */
-.active {
-  background-color: #4caf50;
-  color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -135,7 +130,8 @@
   .nav--responsive a {
     border-top: 2px solid #bada55;
     display: block;
-    text-align: left;
+    text-align: center;
+    width: 100px;
     padding: 20px 0 20px 0;
   }
 
