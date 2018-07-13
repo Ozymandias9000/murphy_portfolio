@@ -1,4 +1,4 @@
-header {
+.site-header header {
   position: relative;
   height: 100vh;
   min-width: 100vw;
@@ -35,6 +35,15 @@ header {
   letter-spacing: 5px;
 }
 
+.banner-text h1 {
+  font-size: 5em;
+  line-height: 1.1em;
+}
+
+.banner-text h3 {
+  font-size: 1.5em;
+}
+
 .arrow--container {
   width: 100px;
   height: 100px;
@@ -64,11 +73,11 @@ i.arrow--down {
 @media only screen and (max-width: 830px) {
   /* header styles
  ------------------------------------------------------------------ */
-  header h1 {
+.site-header header h1 {
     font-size: 5rem;
   }
 
-  header h3 {
+.site-header header h3 {
     font-size: 1.5rem;
   }
 }

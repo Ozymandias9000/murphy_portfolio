@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./nav.css";
 
 class Nav extends React.Component {
@@ -23,12 +24,12 @@ class Nav extends React.Component {
             : "nav nav--responsive"
         }
       >
-        <a href="#home" id="home">
+        <a href="#home" className='home'>
           Home
         </a>
-        <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
+        <a href="#about">About</a>
+        <Link to='/resume'>Resume</Link>
         <div className="menuIcon" onClick={this.toggleMenu}>
           <div className="bar1" />
           <div className="bar2" />

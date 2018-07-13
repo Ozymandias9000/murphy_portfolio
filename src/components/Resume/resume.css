@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.resume-container {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.back-button-container {
+  position: fixed;
+  height: 75px;
+  width: 100vw;
+  background: #324950;
+}
+
+.back-button {
+  position: relative;
+  transform: rotate(45deg);
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  border-radius: 2px;
+  top: 25px;
+  left: 25px;
+  height: 25px;
+  width: 25px;
+}
+
+.resume-container header {
+  display: grid;
+  grid: 150px 50px / 100vw;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: end;
+  width: 100vw;
+  height: 250px;
+  background: #324950;
+  color: white;
+}
+
+.resume-container header h1,
+.resume-container header h3,
+.resume-container header a {
+  z-index: 999;
+}
+
+.resume-container header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-container header img {
+  margin-left: 20px;
+  height: 75px;
+  width: auto;
+}
+
+.resume-container h1 {
+  letter-spacing: 5px;
+}
+
+.resume-container h2 {
+  line-height: 0;
+  color: #95a5a6;
+}
+
+.resume-container main {
+  padding: 10px 40px 10px 40px;
+}
+
+.resume-container main li {
+  line-height: 2;
+}
+
+.resume-container section {
+  margin: 50px 0 50px 0;
+}
+
+/* --------------------------------------------------- */
+
+@media only screen and (max-width: 800px) {
+  .resume-container header div {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .resume-container header {
+    height: 200px;
+  }
+
+  .back-button-container {
+    height: 50px;
+  }
+
+  .back-button {
+    top: 15px;
+    left: 15px;
+    height: 20px;
+    width: 20px;
+  }
+}

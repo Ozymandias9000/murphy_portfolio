@@ -126,13 +126,8 @@
   background-position: center top;
 }
 
-/* --------------------------------------------------------------------- */
-/* @media only screen and (max-width: 1300px) { */
-/* .panels-container {
-    margin: 0;
-  }
-}
-*/
+/* --------------------------------------------------- */
+
 @media only screen and (max-width: 1000px) {
   .panels-container {
     height: auto;
@@ -155,8 +150,3 @@
     border: 2px solid #bada55;
   }
 }
-/* .panels-container {
-    height: 800px;
-    grid: 400px / 400px;
-  }
-} */

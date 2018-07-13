@@ -38,7 +38,7 @@
   color: black;
 }
 
-#home {
+.home {
   grid-column-start: 2;
 }
 
@@ -135,7 +135,7 @@
     padding: 20px 0 20px 0;
   }
 
-  #home {
+  .home {
     grid-column-start: 1;
   }
 
