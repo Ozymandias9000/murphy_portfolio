@@ -142,6 +142,7 @@
 
   .panel:hover,
   .panel:focus {
+    box-shadow: none;
     transform: none;
   }
 
