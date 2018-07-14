@@ -20,7 +20,7 @@ class Projects extends Component {
                 </a>
               </p>
               <p>Drinkful
-                <h6>React PWA, Web Scraping, Stylus </h6>
+                <p>React PWA, Web Scraping, Stylus </p>
               </p>
               <p>
                 <a
@@ -47,7 +47,7 @@ class Projects extends Component {
               </p>
               <p>
                 To Do List
-                <h6>LocalStorage, JS, CSS, HTML</h6>
+                <p>LocalStorage, JS, CSS, HTML</p>
               </p>
               <p>
                 <a
@@ -74,7 +74,7 @@ class Projects extends Component {
               </p>
               <p>
                 Drinkful (w/ API)
-                <h6>React, Punk API</h6>
+                <p>React, Punk API</p>
               </p>
               <p>
                 <a
@@ -101,7 +101,7 @@ class Projects extends Component {
               </p>
               <p>
                 Now That's Delicious!
-                <h6>Node/Express, Pug, MongoDB, Passport</h6>
+                <p>Node/Express, Pug, MongoDB, Passport</p>
               </p>
               <p>
                 <a
@@ -128,7 +128,7 @@ class Projects extends Component {
               </p>
               <p>
                 Murphystagram
-                <h6>React, Redux, Firebase</h6>
+                <p>React, Redux, Firebase</p>
               </p>
               <p>
                 <a
