@@ -6,11 +6,16 @@ import './resume.css'
 const Resume = () => (
   < div className='resume-container' >
     {window.scrollTo(0, 0)}
-    <Link to='/'>
-      <div className='back-button-container'>
-        <div className='back-button'> </div>
-      </div>
-    </Link>
+    <div className='top-bar'>
+      <Link to='/'>
+        <div className='back-button-container'>
+          <div className='back-button'> </div>
+        </div>
+      </Link>
+      <p>
+        <a href='https://drive.google.com/uc?export=download&id=1RSAmtWxIfzw_3XA-IyDJMmsYlaV9exjK'>Download PDF</a>
+      </p>
+    </div>
 
     <header>
       <div>
@@ -22,7 +27,8 @@ const Resume = () => (
         </a>
       </div>
       <div>
-        <h3>Front-End Developer</h3>
+        <h3>Passionate, driven, self-taught web
+developer in Javascript & React</h3>
       </div>
     </header>
 

@@ -8,11 +8,29 @@
   letter-spacing: 1.5px;
 }
 
-.back-button-container {
+.top-bar {
   position: fixed;
   height: 75px;
   width: 100vw;
   background: #324950;
+}
+
+.top-bar p {
+  font-size: 1.2rem;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
+
+.top-bar p a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.back-button-container {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
 }
 
 .back-button {
@@ -82,15 +100,26 @@
 
 @media only screen and (max-width: 800px) {
   .resume-container header div {
-    padding: 20px 40px 20px 40px;
+    padding: 50px 40px 50px 40px;
+    height: 100px;
   }
 
   .resume-container header {
-    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
   }
 
-  .back-button-container {
+  .top-bar {
     height: 50px;
+  }
+
+  .top-bar p {
+    font-size: 1rem;
+    top: 12px;
+    right: 15px;
   }
 
   .back-button {
