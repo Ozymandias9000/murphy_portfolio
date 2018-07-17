@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 
-const Footer = props => (
+const Footer = () => (
   <footer>
     <p>
       Developed in React{" "}

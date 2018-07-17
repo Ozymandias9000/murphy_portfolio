@@ -4,7 +4,7 @@ import './resume.css'
 
 
 const Resume = () => (
-  < div className='resume-container' >
+  <div className='resume-container'>
     {window.scrollTo(0, 0)}
     <div className='top-bar'>
       <Link to='/'>
@@ -183,7 +183,7 @@ developer in Javascript & React</h3>
         </div>
       </section>
     </main>
-  </div >
+  </div>
 )
 
 export default Resume;

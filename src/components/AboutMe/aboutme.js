@@ -1,7 +1,7 @@
 import React from "react";
 import "./aboutme.css";
 
-const AboutMe = props => (
+const AboutMe = () => (
   <div className="about-me">
     <div className="about-me--container">
       <span id="about" />
