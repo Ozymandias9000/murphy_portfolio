@@ -1,6 +1,7 @@
 .site-header header {
   position: relative;
-  height: 100vh;
+  height: 97vh;
+  overflow: none;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -28,6 +29,7 @@
   height: 300px;
   width: 80vw;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.72);
+  z-index: 2;
 }
 
 .banner-text h1,
@@ -73,11 +75,11 @@ i.arrow--down {
 @media only screen and (max-width: 830px) {
   /* header styles
  ------------------------------------------------------------------ */
-.site-header header h1 {
+  .site-header header h1 {
     font-size: 5rem;
   }
 
-.site-header header h3 {
+  .site-header header h3 {
     font-size: 1.5rem;
   }
 }

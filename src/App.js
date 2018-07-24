@@ -5,8 +5,6 @@ import Main from './components/Main/main'
 import Resume from './components/Resume/resume'
 import "./App.css";
 
-
-
 class App extends Component {
   render() {
     return (

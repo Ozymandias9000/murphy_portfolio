@@ -19,7 +19,8 @@ class Projects extends Component {
                   View on GitHub
                 </a>
               </p>
-              <p>Drinkful
+              <p>
+                Drinkful
                 <p>React PWA, Web Scraping, Stylus </p>
               </p>
               <p>
@@ -38,7 +39,7 @@ class Projects extends Component {
             <div className="overlay">
               <p>
                 <a
-                  href="https://github.com/Ozymandias9000/todolocalstorage/"
+                  href="https://github.com/Ozymandias9000/murphy-notes"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -46,12 +47,12 @@ class Projects extends Component {
                 </a>
               </p>
               <p>
-                To Do List
-                <p>LocalStorage, JS, CSS, HTML</p>
+                Murphy Notes
+                <p>Express, Pug, MongoDB, Stylus</p>
               </p>
               <p>
                 <a
-                  href="https://ozymandias9000.github.io/todolocalstorage/"
+                  href="https://murphy-notes.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -133,6 +134,33 @@ class Projects extends Component {
               <p>
                 <a
                   href="https://murphystagram.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View App
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className="panel panel6">
+            <div className="overlay">
+              <p>
+                <a
+                  href="https://github.com/Ozymandias9000/todolocalstorage/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </p>
+              <p>
+                To Do List
+                <p>LocalStorage, JS, CSS, HTML</p>
+              </p>
+              <p>
+                <a
+                  href="https://ozymandias9000.github.io/todolocalstorage/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -21,3 +21,11 @@ p {
   opacity: 1;
   transition: opacity 250ms ease-in;
 }
+
+/* ----------- Media Query ------------- */
+
+@media only screen and (max-width: 400px) {
+  :root {
+    font-size: 10px;
+  }
+}
