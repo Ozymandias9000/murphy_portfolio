@@ -83,10 +83,12 @@
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.72), 0 0 6px rgba(0, 0, 0, 0.45);
-  cursor: pointer;
   line-height: 50px;
   overflow: hidden;
   font-size: 2rem;
+}
+.overlay p a {
+  cursor: pointer;
 }
 
 .overlay p:nth-of-type(2) {
