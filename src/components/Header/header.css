@@ -25,25 +25,36 @@
 }
 
 .banner-text {
-  text-align: center;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 300px;
   width: 80vw;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.72);
   z-index: 2;
 }
 
-.banner-text h1,
-.banner-text h3 {
+.banner-text--h1,
+.banner-text--ellipses,
+.banner-text--h3 {
   letter-spacing: 5px;
 }
 
-.banner-text h1 {
+.banner-text--h1 {
   font-size: 5em;
   line-height: 1.1em;
+  width: 570px;
 }
 
-.banner-text h3 {
+.banner-text--ellipses {
+  width: 30px;
   font-size: 1.5em;
+}
+
+.banner-text--h3 {
+  font-size: 1.5em;
+  width: 600px;
 }
 
 .arrow--container {
@@ -72,14 +83,49 @@ i.arrow--down {
   top: 0;
 }
 
+/* Used for letter fade in animation */
+.textAppear {
+  animation: move 0.6s;
+  position: relative;
+}
+
+@keyframes move {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 830px) {
   /* header styles
  ------------------------------------------------------------------ */
-  .site-header header h1 {
-    font-size: 5rem;
+  .banner-text {
+    position: relative;
+    top: 50px;
+    justify-content: center;
   }
 
-  .site-header header h3 {
-    font-size: 1.5rem;
+  .banner-text--h1 {
+    font-size: 5rem;
+    width: 70vw;
+    text-align: center;
+  }
+
+  .banner-text--ellipses {
+    width: 30px;
+    font-size: 3.8rem;
+    text-align: center;
+  }
+
+  .banner-text--h3 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    width: 60vw;
+    text-align: center;
   }
 }
