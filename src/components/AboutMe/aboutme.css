@@ -4,7 +4,14 @@
   grid: auto / 10% auto 10%;
   justify-content: center;
   align-items: center;
-  background: white;
+  background-image: radial-gradient(
+    circle,
+    #f1fffd,
+    #ebfdfd,
+    #e5fbfd,
+    #dff9fe,
+    #daf7ff
+  );
   color: var(--black);
   border-top: 1px solid var(--black);
   font-size: 1.25rem;
@@ -22,9 +29,9 @@
 
 .about-me img {
   float: right;
-  width: 160px;
+  width: 180px;
   height: 180px;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 #about {
