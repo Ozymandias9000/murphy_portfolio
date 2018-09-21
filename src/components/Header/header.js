@@ -39,10 +39,10 @@ class Header extends Component {
         <header>
           <span id="home" />
           <div className="banner-text">
-            <h1 className="banner-text--h1" />
-            <h3 className="banner-text--ellipses" />
+            <h1 className="banner-text--h1"> </h1>
+            <h3 className="banner-text--ellipses"> </h3>
             <br />
-            <h3 className="banner-text--h3" />
+            <h3 className="banner-text--h3"> </h3>
           </div>
           <div className="arrow--container">
             <i className="arrow--down" />
