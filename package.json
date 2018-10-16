@@ -6,7 +6,7 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.4",
+    "react-scripts": "^2.0.3",
     "react-tilt": "^0.1.4",
     "react-transition-group": "^2.4.0"
   },
@@ -21,5 +21,11 @@
     "gh-pages": "^1.2.0",
     "npm-run-all": "^4.1.3"
   },
-  "homepage": "https://ozymandias9000.github.io/murphy_portfolio/"
+  "homepage": "https://ozymandias9000.github.io/murphy_portfolio/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
