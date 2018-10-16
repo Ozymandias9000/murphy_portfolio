@@ -17,10 +17,10 @@ export default class Project extends Component {
               View on GitHub
             </a>
           </p>
-          <p>
+          <div>
             {projectTitle}
             <p>{projectDescription}</p>
-          </p>
+          </div>
           <p>
             <a href={appLink} target="_blank" rel="noopener noreferrer">
               View App

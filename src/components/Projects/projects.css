@@ -75,7 +75,8 @@
   opacity: 0.8;
 }
 
-.overlay p {
+.overlay p,
+.overlay div {
   margin: 0;
   color: white;
   font-size: 20px;
@@ -87,20 +88,15 @@
   overflow: hidden;
   font-size: 2rem;
 }
-.overlay p a {
-  cursor: pointer;
-}
 
-.overlay p:nth-of-type(2) {
-  margin-top: 20px;
-}
-
-.overlay p p {
-  margin: 0px;
+.overlay div p {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
 }
 
-.overlay a {
+.overlay p a {
+  cursor: pointer;
   text-decoration: none;
   color: #22aaff;
 }
@@ -110,25 +106,25 @@
   background-size: cover;
 }
 
-.panel2 {
+.panel4 {
   background-image: url(../../img/img_notes.png);
   background-position: center top;
 }
 
-.panel3 {
+.panel6 {
   background-image: url(../../img/img_drinkful_v1.png);
 }
 
-.panel4 {
+.panel5 {
   background-image: url(../../img/img_delicious.png);
 }
 
-.panel5 {
+.panel3 {
   background-image: url(../../img/img_murphystagram.png);
   background-position: center top;
 }
 
-.panel6 {
+.panel2 {
   background-image: url(../../img/img_baybio.png);
   background-position: center top;
 }
@@ -148,12 +144,13 @@
 
   .panel:hover,
   .panel:focus {
+    opacity: 0.9;
     box-shadow: none;
     transform: none;
   }
 
   .overlay {
     opacity: 0.8;
-    border: 2px solid #bada55;
+    border: 1px solid #bada55;
   }
 }
