@@ -1,5 +1,6 @@
 .about-me {
   height: 80vh;
+  min-height: 680px;
   display: flex;
   width: 100vw;
   padding: 2rem;
@@ -40,4 +41,19 @@
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
+}
+
+@media only screen and (max-width: 620px) {
+  .about-me,
+  .about-me__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Tilt img {
+    float: none;
+  }
 }
