@@ -6,7 +6,7 @@ const Footer = () => (
     <p>
       Developed in React{" "}
       <span role="img" aria-label="react logo">
-        ⚛️
+        &#x269B;
       </span>{" "}
       | Nick Murphy
     </p>
