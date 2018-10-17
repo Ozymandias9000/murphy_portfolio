@@ -23,13 +23,13 @@ class Projects extends Component {
             projectDescription="React, Reach, Firebase, Stylus"
             appLink="https://baybio.herokuapp.com/"
           />
-          <Project
+          {/* <Project
             i={3}
             gitLink="https://github.com/Ozymandias9000/murphystagram"
             projectTitle="Murphystagram"
             projectDescription="React, Redux, Firebase"
             appLink="https://murphystagram.herokuapp.com/"
-          />
+          /> */}
           <Project
             i={4}
             gitLink="https://github.com/Ozymandias9000/murphy-notes"
@@ -44,13 +44,13 @@ class Projects extends Component {
             projectDescription="Node/Express, Pug, MongoDB, Passport"
             appLink="https://now-thats-delicious-murphy.herokuapp.com/"
           />
-          <Project
+          {/* <Project
             i={6}
             gitLink="https://github.com/Ozymandias9000/drinkful_v1"
             projectTitle="Drinkful (w/ API)"
             projectDescription="React, Punk API"
             appLink="https://drinkful-hzlxekwgbi.now.sh"
-          />
+          /> */}
         </section>
       </div>
     );
