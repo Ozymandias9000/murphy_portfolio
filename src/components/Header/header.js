@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./header.css";
-import { Spring, config } from "react-spring";
+import { Spring } from "react-spring";
 
 class Header extends Component {
   state = {
@@ -44,9 +44,9 @@ class Header extends Component {
             height: `0%`
           }}
           to={{
-            height: `97%`
+            height: `100%`
           }}
-          config={{ tension: 150, friction: 100 }}
+          config={{ tension: 150, friction: 50 }}
         >
           {({ height }) => (
             <header className="site-header" style={{ height }}>
