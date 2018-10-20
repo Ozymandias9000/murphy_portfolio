@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./header.css";
+import { Spring, config } from "react-spring";
 
 class Header extends Component {
   componentDidMount() {
@@ -28,29 +29,46 @@ class Header extends Component {
       }
     };
 
-    textAppear(h1Text, h1Target);
-    textAppear(ellipses, ellipsesTarget, 200, 2000);
-    textAppear(h3Text, h3Target, 50, 3000);
+    textAppear(h1Text, h1Target, 80, 1000);
+    textAppear(ellipses, ellipsesTarget, 100, 3000);
+    textAppear(h3Text, h3Target, 50, 4000);
   }
 
   render() {
     return (
-      <div className="site-header">
-        <header>
-          <span id="home" />
-          <div className="banner-text">
-            <h1 className="banner-text--h1"> </h1>
-            <h3 className="banner-text--ellipses"> </h3>
-            <br />
-            <h3 className="banner-text--h3"> </h3>
-          </div>
-          <div className="arrow--container">
-            <i className="arrow--down" />
-          </div>
-        </header>
-      </div>
+      <>
+        <Spring
+          from={{
+            height: `0%`,
+            opacity: 0
+          }}
+          to={{
+            height: `97%`,
+            opacity: 1
+          }}
+          config={{ tension: 150, friction: 100 }}
+        >
+          {({ height, opacity }) => (
+            <header className="site-header" style={{ height, opacity }}>
+              <span id="home" />
+              <div className="banner-text">
+                <h1 className="banner-text--h1"> </h1>
+                <h3 className="banner-text--ellipses"> </h3>
+                <br />
+                <h3 className="banner-text--h3"> </h3>
+              </div>
+              <div className="arrow--container" style={{ opacity }}>
+                <i className="arrow--down" style={{ opacity }} />
+              </div>
+            </header>
+          )}
+        </Spring>
+        <div className="header--pad-box" />
+      </>
     );
   }
+  //      )
+  // }
 }
 
 export default Header;

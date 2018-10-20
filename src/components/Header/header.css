@@ -1,8 +1,12 @@
-.site-header header {
-  position: relative;
+.header--pad-box {
   height: 97vh;
+  width: 100vw;
+}
+
+.site-header {
+  position: absolute;
   overflow: none;
-  min-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -69,7 +73,7 @@ i.arrow--down {
   background: linear-gradient(rgb(242, 114, 84) 0%, rgb(240, 100, 87) 100%);
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  position: absolute;
+  position: relative;
   width: 3.5rem;
   height: 3.5rem;
   border: solid var(--black);
@@ -111,19 +115,19 @@ i.arrow--down {
   }
 
   .banner-text--h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     width: 70vw;
     text-align: center;
   }
 
   .banner-text--ellipses {
     width: 30px;
-    font-size: 3.8rem;
+    font-size: 1rem;
     text-align: center;
   }
 
   .banner-text--h3 {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     line-height: 3rem;
     width: 60vw;
     text-align: center;

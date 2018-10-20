@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Tilt from "react-tilt";
 
 export default class Project extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class Project extends Component {
       appLink
     } = this.props;
     return (
-      <div className={`panel panel${i}`}>
+      <Tilt className={`panel panel${i}`} options={{ max: 6, scale: 1.02 }}>
         <div className="overlay">
           <p>
             <a href={gitLink} target="_blank" rel="noopener noreferrer">
@@ -27,7 +28,7 @@ export default class Project extends Component {
             </a>
           </p>
         </div>
-      </div>
+      </Tilt>
     );
   }
 }
