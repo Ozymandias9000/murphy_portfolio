@@ -69,6 +69,10 @@
   justify-content: center;
 }
 
+.arrow--container__hidden {
+  opacity: 0;
+}
+
 i.arrow--down {
   background: linear-gradient(rgb(242, 114, 84) 0%, rgb(240, 100, 87) 100%);
   transform: rotate(45deg);

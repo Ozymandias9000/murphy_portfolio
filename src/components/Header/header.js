@@ -3,11 +3,13 @@ import "./header.css";
 import { Spring, config } from "react-spring";
 
 class Header extends Component {
+  state = {
+    h1Text: "Nick Murphy",
+    ellipses: "...",
+    h3Text: "is obsessed with web development."
+  };
   componentDidMount() {
-    const h1Text = "Nick Murphy";
-    const ellipses = "...";
-    const h3Text = "is obsessed with web development.";
-
+    // Animating text
     const h1Target = document.querySelector(".banner-text--h1");
     const ellipsesTarget = document.querySelector(".banner-text--ellipses");
     const h3Target = document.querySelector(".banner-text--h3");
@@ -29,9 +31,9 @@ class Header extends Component {
       }
     };
 
-    textAppear(h1Text, h1Target, 80, 1000);
-    textAppear(ellipses, ellipsesTarget, 100, 3000);
-    textAppear(h3Text, h3Target, 50, 4000);
+    textAppear(this.state.h1Text, h1Target, 80, 1000);
+    textAppear(this.state.ellipses, ellipsesTarget, 100, 3000);
+    textAppear(this.state.h3Text, h3Target, 50, 4000);
   }
 
   render() {
@@ -39,17 +41,15 @@ class Header extends Component {
       <>
         <Spring
           from={{
-            height: `0%`,
-            opacity: 0
+            height: `0%`
           }}
           to={{
-            height: `97%`,
-            opacity: 1
+            height: `97%`
           }}
           config={{ tension: 150, friction: 100 }}
         >
-          {({ height, opacity }) => (
-            <header className="site-header" style={{ height, opacity }}>
+          {({ height }) => (
+            <header className="site-header" style={{ height }}>
               <span id="home" />
               <div className="banner-text">
                 <h1 className="banner-text--h1"> </h1>
@@ -57,8 +57,8 @@ class Header extends Component {
                 <br />
                 <h3 className="banner-text--h3"> </h3>
               </div>
-              <div className="arrow--container" style={{ opacity }}>
-                <i className="arrow--down" style={{ opacity }} />
+              <div className={"arrow--container"}>
+                <i className="arrow--down" />
               </div>
             </header>
           )}
