@@ -57,7 +57,7 @@ class Header extends Component {
                 <br />
                 <h3 className="banner-text--h3"> </h3>
               </div>
-              <div className={"arrow--container"}>
+              <div className={"arrow--container arrow--container__hidden"}>
                 <i className="arrow--down" />
               </div>
             </header>

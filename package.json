@@ -12,6 +12,7 @@
     "react-transition-group": "^2.4.0"
   },
   "scripts": {
+    "skipStart": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
