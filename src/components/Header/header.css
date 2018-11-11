@@ -1,22 +1,14 @@
-.header--pad-box {
-  height: 97vh;
-  width: 100vw;
-}
-
 .site-header {
-  position: absolute;
+  position: relative;
   overflow: none;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: var(--white);
   background: rgb(240, 100, 87); /* fallback for old browsers */
-  background: -webkit-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: -moz-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: -o-linear-gradient(bottom, #29ffc6, #20e3b2, #0cebeb);
-  background: linear-gradient(rgb(242, 114, 84) 0%, rgb(240, 100, 87) 100%);
+  background: linear-gradient(rgb(242, 114, 84) 0%, rgb(230, 80, 100) 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -32,8 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
-  width: 80vw;
+  min-height: 500px;
   text-align: center;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.72);
   z-index: 2;
@@ -67,24 +58,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-}
-
-.arrow--container__hidden {
-  opacity: 0;
-}
-
-i.arrow--down {
-  background: linear-gradient(rgb(242, 114, 84) 0%, rgb(240, 100, 87) 100%);
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  position: relative;
-  width: 3.5rem;
-  height: 3.5rem;
-  border: solid var(--black);
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  top: 75px;
-  padding: 3px;
 }
 
 #home--link {

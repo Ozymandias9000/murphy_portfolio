@@ -41,10 +41,10 @@ class Header extends Component {
       <>
         <Spring
           from={{
-            height: `0%`
+            height: `0vh`
           }}
           to={{
-            height: `100%`
+            height: `100vh`
           }}
           config={{ tension: 150, friction: 50 }}
         >
@@ -56,9 +56,6 @@ class Header extends Component {
                 <h3 className="banner-text--ellipses"> </h3>
                 <br />
                 <h3 className="banner-text--h3"> </h3>
-              </div>
-              <div className={"arrow--container arrow--container__hidden"}>
-                <i className="arrow--down" />
               </div>
             </header>
           )}
