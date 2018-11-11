@@ -1,8 +1,6 @@
 .nav {
   position: relative;
   background-color: var(--black);
-  letter-spacing: 3px;
-  height: auto;
   width: 100vw;
   white-space: nowrap;
   display: grid;
@@ -20,27 +18,61 @@
   box-shadow: 0 8px 6px -6px black;
 }
 
+.nav p {
+  margin: 0;
+  height: 30px;
+}
+
 /* Style the links inside the navigation bar */
 .nav a,
-.nav--responsive a {
-  display: block;
-  color: #c0ffee;
-  text-align: center;
-  padding: 14px 16px;
+.nav--responsive a,
+.nav button,
+.nav--responsive button {
+  font-family: "Open Sans";
+  font-weight: 600;
+  height: 100%;
+  letter-spacing: 3px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: var(--black);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
   text-decoration: none;
-  font-size: 17px;
   transition: all 0.2s;
 }
 
 /* Change the color of links on hover */
-.nav a:hover {
+.nav a:hover,
+.nav button:hover {
   background-color: white;
   border-radius: 2px;
-  color: black;
+  color: var(--black);
 }
 
 .home {
   grid-column-start: 2;
+}
+
+.home:active,
+.home:focus {
+  border: 0;
+  outline: none;
+  background: var(--black);
+}
+
+.home::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.home p {
+  position: relative;
+  top: 4px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -51,7 +83,6 @@
 /* Menu Icon */
 
 .menuIcon {
-  display: block;
   cursor: pointer;
 }
 
@@ -83,25 +114,23 @@
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* When the screen is less than 700 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.menuIcon) */
 @media screen and (max-width: 700px) {
-  .nav a:not(:first-child) {
+  /* When the screen is less than 700 pixels wide, hide all links, except for the first button("Home"). Show the link that contains should open and close the topnav (.menuIcon) */
+
+  .nav a {
     display: none;
   }
 
   .nav .menuIcon {
     grid-column: span 1/ -1;
     display: block;
-    justify-self: end;
-    padding-right: 20px;
   }
-}
 
-/* The "responsive" class is swapped with "nav" class with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 700px) {
+  /* The "responsive" class is swapped with "nav" class with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
+
   .nav--responsive {
     background-color: var(--black);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     height: auto;
     width: 100vw;
     white-space: nowrap;
@@ -117,10 +146,6 @@
     transition: all 0.3s;
   }
 
-  .nav--responsive a:not(:first-child) {
-    display: block;
-  }
-
   .nav--responsive .menuIcon {
     position: absolute;
     border: none;
@@ -128,19 +153,24 @@
     top: 12px;
   }
 
-  .nav--responsive a {
+  .nav--responsive a,
+  .nav--responsive button {
     border-top: 2px solid #bada55;
-    display: block;
-    text-align: center;
+    display: flex;
     width: 100px;
-    padding: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
   }
 
   .home {
     grid-column-start: 1;
   }
 
-  .nav--responsive a:first-child {
+  .nav--responsive button {
     border-top: none;
+  }
+
+  .nav button,
+  .nav--responsive button {
+    padding: 0 20px 0 20px;
   }
 }

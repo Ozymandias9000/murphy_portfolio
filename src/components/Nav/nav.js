@@ -29,12 +29,18 @@ class Nav extends React.Component {
         >
           {({ height }) => (
             <nav className="nav" style={{ height }}>
-              <a href="#home" className="home">
-                Home
+              <button onClick={() => window.scrollTo(0, 0)} className="home">
+                <p>Home</p>
+              </button>
+              <a href="#projects">
+                <p>Projects</p>
               </a>
-              <a href="#projects">Projects</a>
-              <a href="#about">About</a>
-              <Link to="/resume">Resume</Link>
+              <a href="#about">
+                <p>About</p>
+              </a>
+              <Link to="/resume">
+                <p>Resume</p>
+              </Link>
               <div className="menuIcon" onClick={this.toggleMenu}>
                 <div className="bar1" />
                 <div className="bar2" />
@@ -52,12 +58,18 @@ class Nav extends React.Component {
               : "nav nav--responsive"
           }
         >
-          <a href="#home" className="home">
-            Home
+          <button onClick={() => window.scrollTo(0, 0)} className="home">
+            <p>Home</p>
+          </button>
+          <a href="#projects">
+            <p>Projects</p>
           </a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <Link to="/resume">Resume</Link>
+          <a href="#about">
+            <p>About</p>
+          </a>
+          <Link to="/resume">
+            <p>Resume</p>
+          </Link>
           <div className="menuIcon" onClick={this.toggleMenu}>
             <div className="bar1" />
             <div className="bar2" />

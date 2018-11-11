@@ -136,3 +136,15 @@
     width: 20px;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .resume-container,
+  .resume-container header {
+    height: 50vh;
+    min-height: 375px;
+  }
+
+  .resume-container header img {
+    margin-left: 5px;
+  }
+}

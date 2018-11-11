@@ -1,3 +1,7 @@
+.header--container {
+  height: 100vh;
+}
+
 .site-header {
   position: relative;
   overflow: none;

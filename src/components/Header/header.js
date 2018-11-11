@@ -38,7 +38,7 @@ class Header extends Component {
 
   render() {
     return (
-      <>
+      <div className="header--container">
         <Spring
           from={{
             height: `0vh`
@@ -50,7 +50,6 @@ class Header extends Component {
         >
           {({ height }) => (
             <header className="site-header" style={{ height }}>
-              <span id="home" />
               <div className="banner-text">
                 <h1 className="banner-text--h1"> </h1>
                 <h3 className="banner-text--ellipses"> </h3>
@@ -60,8 +59,7 @@ class Header extends Component {
             </header>
           )}
         </Spring>
-        <div className="header--pad-box" />
-      </>
+      </div>
     );
   }
   //      )
